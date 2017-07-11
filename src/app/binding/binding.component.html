@@ -17,7 +17,7 @@
 <p>Property binding Example</p>
 <br>
 
-<button class="btn btn-primary" [disabled] = "!buttonEnabled" (click)="resetUsername()">Property Binding</button>
+<button class="btn btn-primary" [disabled] = "username === ''" (click)="username = ''">Property Binding</button>
 
 
 <hr>

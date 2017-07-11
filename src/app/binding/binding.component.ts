@@ -17,8 +17,6 @@ export class BindingComponent implements OnInit {
 
 	username = '';
 
-	buttonEnabled = false;
-
 	buttonClicked = " ";
 
 	ngOnInit() {
@@ -28,22 +26,6 @@ export class BindingComponent implements OnInit {
 	Constructor(){
 
 	}
-
-	//Enable button if input value is not empty
-	onEnteringInput(event: any) {
-		if(event.target.value.length >= 1) {
-			this.buttonEnabled = true;
-		} else {
-			this.buttonEnabled = false;
-		}
-	}
-
-	//Reset the values on Click on Button
-	resetUsername() {
-		this.username = '';
-		this.buttonEnabled = false;
-	}
-
 
 	//Checking Click Event
 	checkClickEvent() {
