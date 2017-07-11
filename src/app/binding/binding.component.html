@@ -1,0 +1,31 @@
+<p>String Interpolation Example: {{ fullName }}</p>
+
+<hr>
+
+<p>Two Way Data Binding Example</p>
+
+<input class="form-control" [(ngModel)]="username" (input)="onEnteringInput($event)"/>
+
+<hr>
+
+<p>Output the Username with String Interpolation</p>
+
+<p class="username"> Username : {{ username }} </p>
+
+<hr>
+
+<p>Property binding Example</p>
+<br>
+
+<button class="btn btn-primary" [disabled] = "!buttonEnabled" (click)="resetUsername()">Property Binding</button>
+
+
+<hr>
+
+<p>Checking Click Event</p>
+
+<button class="btn btn-danger" (click) = "checkClickEvent()">Check Click</button>
+
+<hr>
+
+<p> {{ buttonClicked }} </p>
